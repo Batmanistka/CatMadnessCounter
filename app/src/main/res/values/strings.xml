@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CatCounter</string>
+    <string name="title">Ranking Of Cat Madness</string>
+    <string name="resault_0">0</string>
+    <string name="parkourSprint">Parkour Sprint</string>
+    <string name="trotJumping">Trot, Jumping"</string>
+    <string name="toysRolling">Toys rolling</string>
+    <string name="imHereLook">I\'m here look</string>
+    <string name="newDay">New Day</string>
+    <string name="catName">Cat Name</string>
+</resources>

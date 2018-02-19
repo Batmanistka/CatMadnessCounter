@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.catmadnesscounter.MainActivity">
+
+    <RelativeLayout
+        style="@style/relativeOne">
+
+    <LinearLayout
+            style="@style/linearOne">
+
+        <TextView
+            style="@style/masterTextView"
+            android:text="@string/title" />
+
+        <LinearLayout
+            style="@style/linearTwo">
+
+            <LinearLayout
+                style="@style/linearThree">
+
+                    <EditText
+                        android:id="@+id/edit_name_first_cat"
+                        style="@style/editText" />
+
+                <ImageView
+                    style="@style/image"
+                    android:src="@drawable/cat" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    style="@style/scoreTextView"
+                    android:text="@string/resault_0" />
+
+                <Button
+                    style="@style/firstButton"
+                    android:onClick="addFourForCatA"
+                    android:text="@string/parkourSprint" />
+
+                <Button
+                    style="@style/secondButton"
+                    android:onClick="addThreeForCatA"
+                    android:text="@string/trotJumping" />
+
+                <Button
+                    style="@style/thirdButton"
+                    android:onClick="addTwoForCatA"
+                    android:text="@string/toysRolling" />
+
+                <Button
+                    style="@style/fourthButton"
+                    android:onClick="addOneForCatA"
+                    android:text="@string/imHereLook" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearThree">
+
+                    <EditText
+                        android:id="@+id/edit_name_second_cat"
+                        style="@style/editText" />
+
+                <ImageView
+                    style="@style/image"
+                    android:src="@drawable/catt" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    style="@style/scoreTextView"
+                    android:text="@string/resault_0" />
+
+                <Button
+                    style="@style/firstButton"
+                    android:onClick="addFourForCatB"
+                    android:text="@string/parkourSprint" />
+
+                <Button
+                    style="@style/secondButton"
+                    android:onClick="addThreeForCatB"
+                    android:text="@string/trotJumping" />
+
+                <Button
+                    style="@style/thirdButton"
+                    android:onClick="addTwoForCatB"
+                    android:text="@string/toysRolling" />
+
+                <Button
+                    style="@style/fourthButton"
+                    android:onClick="addOneForCatB"
+                    android:text="@string/imHereLook" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <Button
+            style="@style/fifthButton"
+            android:onClick="newDayScore"
+            android:text="@string/newDay" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
