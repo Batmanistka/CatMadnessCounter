@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     int scoreCatA = 0;
     int scoreCatB = 0;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,14 +54,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void saveNameFirstCat(View view) {
-        // Takes the name from the text field
-        EditText editNameField = (EditText) findViewById(R.id.edit_name_first_cat);
+        // Takes the name from the text field A cat
+        EditText editNameField = findViewById(R.id.edit_name_first_cat);
         String name = editNameField.getText().toString();
     }
 
     public void saveNameSecondCat(View view) {
-        // Takes the name from the text field
-        EditText editNameField = (EditText) findViewById(R.id.edit_name_second_cat);
+        // Takes the name from the text field B cat
+        EditText editNameField = findViewById(R.id.edit_name_second_cat);
         String name = editNameField.getText().toString();
     }
 
@@ -70,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Cat A.
      */
     public void displayForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_a_score);
+        TextView scoreView = findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
 
@@ -110,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Cat B.
      */
     public void displayForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
+        TextView scoreView = findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
 
@@ -147,9 +146,8 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamB(scoreCatB);
     }
 
-
     /**
-     * NewDay the score for Team A and B Team.
+     * NewDay - reset the score for Team A and B Team.
      */
     public void newDayScore(View v) {
         displayForTeamA(scoreCatA = 0);
